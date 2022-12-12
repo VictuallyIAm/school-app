@@ -1,20 +1,35 @@
-import React from 'react'
-import bts from '../data/bts.jpg'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import Notiflix from 'notiflix'
 
 const Contact = () => {
+  const form = useRef()
+  const applyCustomer = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_321usp4',
+        'template_ju3q8q5',
+        form.current,
+        'Qy5EvY0m13ER3oFiB'
+      )
+      .then(
+        (result) => {
+          Notiflix.Notify.success('We will call you in 24 hours')
+        },
+        (error) => {
+          console.log(error.message)
+        }
+      )
+    e.target.reset()
+  }
   return (
     <>
-      <div className="absolute bg-black  z-10">
-        <img
-          className="w-screen  h-screen -translate-y-20 opacity-20 pointer-events-none"
-          src={bts}
-          alt="logo"
-        />
-      </div>
-      <section classname="z-20 relative">
-        <div className="z-30 relative flex justify-center items-center ">
-          <div className="w-1/2 my-20 ">
-            <form>
+      <section className="z-20 relative ">
+        <div className="z-30 relative flex justify-center items-center bg-black bg-opacity-80 h-screen">
+          <div className="w-1/2 my-0 ">
+            <form ref={form} onSubmit={applyCustomer}>
               <div className="flex flex-col justify-center">
                 <input
                   className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
@@ -25,16 +40,30 @@ const Contact = () => {
                 />
                 <input
                   className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
+                  type="email"
+                  name="user_email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
                   type="text"
-                  name="phoneNumber"
-                  placeholder="Phone number"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
+                  type="text"
+                  name="message"
+                  placeholder="Your message"
                   required
                 />
                 <button
                   className="m-4 px-5 py-2 text-white text-lg font-light bg-sky-600 rounded-xl"
                   type="submit"
                 >
-                  Yes, I want to learn korean
+                  Send
                 </button>
               </div>
             </form>

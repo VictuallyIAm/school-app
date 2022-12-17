@@ -12,11 +12,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/school-app" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="/tutors" element={<Teachers />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<MainLayout />}>
+            <Route path="school-app" element={<Home />} />
+            <Route path="tutors" element={<Teachers />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

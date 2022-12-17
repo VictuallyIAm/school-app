@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/school-app/static/css/main.57d3f5b8.css",
+    "main.js": "/school-app/static/js/main.b745d55b.js",
+    "static/js/787.77fdc768.chunk.js": "/school-app/static/js/787.77fdc768.chunk.js",
+    "static/media/card3.jpg": "/school-app/static/media/card3.40f5395a1e0264f9041d.jpg",
+    "static/media/card1jpg.jpg": "/school-app/static/media/card1jpg.41c52736d771516d4cdb.jpg",
+    "static/media/bob.jpg": "/school-app/static/media/bob.10b8fa1f2be4a22281a1.jpg",
+    "index.html": "/school-app/index.html",
+    "main.57d3f5b8.css.map": "/school-app/static/css/main.57d3f5b8.css.map",
+    "main.b745d55b.js.map": "/school-app/static/js/main.b745d55b.js.map",
+    "787.77fdc768.chunk.js.map": "/school-app/static/js/787.77fdc768.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57d3f5b8.css",
+    "static/js/main.b745d55b.js"
+  ]
+}

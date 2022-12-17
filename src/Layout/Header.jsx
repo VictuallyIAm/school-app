@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <div className="flex static opacity-100 bg-black bg-opacity-80   p-1">
         <div className="m-1 sm:mx-0">
-          <Link to="/">
+          <Link to="/school-app">
             <span className="flex text-purple-500 sm:hidden">
               <img src={bob} alt="logo" className="h-12 w-12 rounded-full" />
               <p className="mx-3 text-3xl my-1 font-bold">Koremoon</p>
@@ -19,7 +19,7 @@ const Header = () => {
           <nav className=" w-full text-lg text-gray-100">
             <div className=" flex flex-row justify-center align-middle mx-3 sm:mx-0">
               <Link
-                to="/"
+                to="/school-app"
                 className=" border-r-2 border-l-2 p-2 sm:border-l-0 px-4 border-r-slate-50 hover:text-slate-500"
               >
                 Home

@@ -38,7 +38,7 @@ const Home = () => {
       <div className="bg-black bg-opacity-80 ">
         <div className="border-b-2">
           <div className="flex  flex-col  text-center justify-center h-screen   text-white">
-            <h1 className="text-white text-5xl z-30 font-bold">
+            <h1 className="text-white text-5xl z-30 font-bold md:text-2xl">
               SIGN UP FOR YOUR FIRST LESSON!
             </h1>
             <form ref={form} onSubmit={applyCustomer} className="z-30 my-8">
@@ -47,7 +47,7 @@ const Home = () => {
                 placeholder="Name"
                 required
                 name="user_name"
-                className="text-2xl p-3 px-5 border-2-slate-100 bg-slate-200 rounded mx-3 text-black focus:outline-none"
+                className="text-2xl p-3 px-5 my-2 border-2-slate-100 bg-slate-200 rounded mx-3 text-black focus:outline-none"
               ></input>
               <input
                 type="text"
@@ -66,10 +66,10 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col bg-sowhite p-6 px-18 items-center">
-          <h1 className="text-6xl my-8 text-center">
+          <h1 className="text-6xl my-8 text-center md:text-3xl">
             New courses starting soon!
           </h1>
-          <p className="text-3xl font-thin text-center px-16">
+          <p className="text-3xl font-thin text-center px-16 md:text-xl md:px-6">
             Live lessons with our teachers, 24/7 support it Telegram, cartoons,
             movies and competitions for students! Starts on January, 11.
           </p>
@@ -87,54 +87,66 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className=" bg-sogray flex  p-14">
-          <div className="mx-10 my-10 text-white text-3xl font-semibold w-2/3 md:text-xl md:my-2">
+        <div className=" bg-sogray flex  p-14 md:px-2 md:flex-col md:items-center md:text-center">
+          <div className="mx-10 my-10 text-white text-3xl font-semibold w-2/3 md:w-9/12 md:text-xl md:my-2 md:mx-2">
             Let us introduce ourselfs. We are team of experienced and passionate
             teachers, motivated and purposeful. Click on button to learn more!
           </div>
           <Link to="tutors">
             <div className="flex  align-middle justify-center">
-              <button className="px-10 py-3 my-16  border-2 bg-purple-500 rounded-xl md:px-2">
+              <button className="px-10 py-3 my-16  border-2 bg-purple-500 rounded-xl md:text-sm md:px-1 md:my-8">
                 Let's have a look
               </button>
             </div>
           </Link>
         </div>
         <div className="bg-sowhite  text-black ">
-          <h1 className="text-center font-extrabold text-black text-6xl p-10 ">
+          <h1 className="text-center font-extrabold text-black text-6xl p-10 md:text-2xl ">
             What is the purpose for learning Korean?
           </h1>
-          <h1 className="text-center text-3xl m-12 text-black">
+          <h1 className="text-center text-3xl m-12 text-black md:text-xl md:my-4">
             Students of Koremoon most often have the following aims
           </h1>
           <div className="flex mx-2 flex-wrap justify-center md:mx-0 text-black">
             <div className="flex flex-col  m-4 p-2 max-w-sm ">
-              <img src={card1} className=" block rounded max-w-sm" alt="logo" />
-              <div className="text-center font-bold text-3xl my-4">
+              <img
+                src={card1}
+                className=" block rounded max-w-sm md:max-w-xs"
+                alt="logo"
+              />
+              <div className="text-center font-bold text-3xl my-4 md:text-xl">
                 Studing in Korean Universities
               </div>
-              <div className="text-center text-xl my-4">
+              <div className="text-center text-xl my-4 md:text-base">
                 We prepare our students to apply for Korean University programs
                 and help them to provide all neccesary documents.
               </div>
             </div>
-            <div className="flex flex-col  m-4 p-2 max-w-sm">
-              <img src={card2} className=" block rounded max-w-sm" alt="logo" />
-              <div className="text-center font-bold text-3xl my-4">
+            <div className="flex flex-col  m-4 p-2 max-w-sm ">
+              <img
+                src={card2}
+                className=" block rounded max-w-sm md:max-w-xs"
+                alt="logo"
+              />
+              <div className="text-center font-bold text-3xl my-4 md:text-xl">
                 Moving to Korea
               </div>
-              <div className="text-center text-xl my-4">
+              <div className="text-center text-xl my-4 md:text-base">
                 We hold various events where we tell and give recommendations on
                 moving. Also, our students who live in Korea now share their
                 experience.
               </div>
             </div>
             <div className="flex flex-col  m-4 p-2 max-w-sm">
-              <img src={card3} className=" block rounded max-w-sm" alt="logo" />
-              <div className="text-center font-bold text-3xl my-4">
+              <img
+                src={card3}
+                className=" block rounded max-w-sm md:max-w-xs"
+                alt="logo"
+              />
+              <div className="text-center font-bold text-3xl my-4 md:text-xl">
                 Watching doramas and understand idols
               </div>
-              <div className="text-center text-xl my-4">
+              <div className="text-center text-xl my-4 md:text-base">
                 Education is built exclusively on modern content, so it is very
                 interesting to study with us, and the teachers are Korean fans
                 just like you
@@ -142,13 +154,13 @@ const Home = () => {
             </div>
           </div>
           <hr className="" />
-          <div className=" bg-sogray flex  p-14">
-            <div className="mx-10 my-10 text-white text-3xl font-semibold w-2/3 md:text-xl md:my-2">
+          <div className=" bg-sogray flex  p-14 md:flex-col md:items-center md:text-center  ">
+            <div className="mx-10 my-10 text-white text-3xl font-semibold w-2/3 md:w-full md:text-xl md:my-2 md:mx-2">
               Take a look on your students feedback. Most of them successfully
               achieved thier targets and we still connected with them
             </div>
-            <div className="flex   w-1/2 align-middle justify-center">
-              <button className="px-10 py-1 my-16  border-2 bg-purple-500 rounded-xl md:px-2">
+            <div className="flex    align-middle justify-center">
+              <button className="px-10 py-3 my-16  border-2 bg-purple-500 rounded-xl md:text-sm md:px-1 md:my-8">
                 Let's have a look
               </button>
             </div>
@@ -156,12 +168,12 @@ const Home = () => {
           <hr className="" />
           <div className="bg-soslate flex flex-col">
             <div className=" p-4  text-center">
-              <h1 className="text-center font-extrabold text-6xl text-black my-10">
+              <h1 className="text-center font-extrabold text-6xl text-black my-10 md:text-2xl">
                 Our courses description
               </h1>
             </div>
             <div className="flex p-3 flex-wrap text-center sm:px-0 justify-center  ">
-              <div className="flex flex-col p-4  mx-3 my-4 text-lg bg-verywhite max-w-sm rounded-lg md:px-1 md:mx-1">
+              <div className="flex flex-col p-4  mx-4 my-4 text-lg bg-verywhite max-w-sm rounded-lg md:px-2">
                 <div className="my-5 text-4xl border-4 rounded-xl ">
                   LEVEL 1
                 </div>
@@ -175,7 +187,7 @@ const Home = () => {
                   totam perferendis molestias ratione aperiam hic nobis a?
                 </div>
                 <div className="text-xl font-bold my-3">DURATION: 4 MONTHS</div>
-                <div className="flex">
+                <div className="flex md:justify-center">
                   <Link to="courses">
                     <button className="bg-black p-2 text-white mx-1 px-8 rounded border-2 border-black text-lg my-5 -translate-y-1 hover:bg-white hover:text-black ">
                       Apply
@@ -189,7 +201,7 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col p-4  mx-3 my-4 text-lg bg-verywhite max-w-sm rounded-lg">
+              <div className="flex flex-col p-4 mx-3 my-4 text-lg bg-verywhite max-w-sm rounded-lg md:px-2">
                 <div className="my-5 text-4xl border-4 rounded-xl">LEVEL 2</div>
                 <div className="text-start font-bold text-2xl my-3">
                   $39.95/month
@@ -201,7 +213,7 @@ const Home = () => {
                   totam perferendis molestias ratione aperiam hic nobis a?
                 </div>
                 <div className="text-xl font-bold my-3">DURATION: 4 MONTHS</div>
-                <div className="flex">
+                <div className="flex md:justify-center">
                   <Link to="courses">
                     <button className="bg-black p-2 text-white mx-1 px-8 rounded border-2 border-black text-lg my-5 -translate-y-1 hover:bg-white hover:text-black ">
                       Apply
@@ -216,7 +228,7 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="flex flex-col p-4  mx-3 my-4 text-lg bg-verywhite max-w-sm rounded-lg">
+              <div className="flex flex-col p-4  mx-4 my-4 text-lg bg-verywhite max-w-sm rounded-lg md:px-2">
                 <div className="my-5 text-4xl border-4 rounded-xl">LEVEL 3</div>
                 <div className="text-start font-bold text-2xl my-3">
                   $79.95/month
@@ -228,7 +240,7 @@ const Home = () => {
                   totam perferendis molestias ratione aperiam hic nobis a?
                 </div>
                 <div className="text-xl font-bold my-3">DURATION: 4 MONTHS</div>
-                <div className="flex">
+                <div className="flex md:justify-center">
                   <Link to="courses">
                     <button className="bg-black p-2 text-white mx-1 px-8 rounded border-2 border-black text-lg my-5 -translate-y-1 hover:bg-white hover:text-black ">
                       Apply
@@ -254,8 +266,8 @@ const Home = () => {
               REQUEST A CALL
             </h1>
             <form ref={form} onSubmit={applyCustomer}>
-              <div className="flex flex-col justify-center mt-10 md:mt-2 md:mx-4">
-                <div className="flex w-full justify-center md:flex-col">
+              <div className="flex flex-col md:items-center justify-center mt-10 md:mt-2 md:mx-4">
+                <div className="flex justify-center md:flex-col md:items-center">
                   <input
                     className="m-3 p-4 w-1/2 md:w-full bg-sowhite text-lg text-black border-1 rounded-full focus:outline-none"
                     type="text"

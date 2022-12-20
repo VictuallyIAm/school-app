@@ -32,14 +32,14 @@ const Courses = () => {
   return (
     <>
       <div className=" bg-black bg-opacity-80">
-        <h1 className="text-white justify-center text-center font-bold text-5xl p-4 pt-8 pb-1 flex">
+        <h1 className="text-white justify-center text-center font-bold text-5xl p-4 pt-8 pb-1 flex md:text-2xl">
           GROUP LESSONS
         </h1>
-        <h2 className="text-white justify-center text-center text-3xl p-4 py-8 flex">
+        <h2 className="text-white justify-center text-center text-3xl p-4 py-8 flex md:text-xl">
           ALL LESSONS ARE CONDUCTED REMOTELY AT A CONVENIENT TIME FOR YOU
         </h2>
         <div className="flex justify-around flex-wrap py-8">
-          <div className="flex flex-col  bg-white text-black mx-6 p-12 rounded-md border-2 border-slate-30">
+          <div className="flex flex-col  bg-white text-black mx-6 p-12 rounded-md border-2 border-slate-300 md:mb-5">
             <div className="flex flex-col ">
               <span className="text-3xl font-bold text-center border-4 rounded-xl">
                 1 LEVEL
@@ -71,7 +71,7 @@ const Courses = () => {
               </button>
             </span>
           </div>
-          <div className="flex flex-col  bg-gray-400 text-black mx-6 p-12 rounded-md border-2 border-slate-300">
+          <div className="flex flex-col  bg-gray-400 text-black mx-6 p-12 rounded-md border-2 border-slate-300 md:mb-5">
             <div className="flex flex-col ">
               <span className="text-3xl font-bold text-center border-4 rounded-xl">
                 2 LEVEL
@@ -103,7 +103,7 @@ const Courses = () => {
               </button>
             </span>
           </div>
-          <div className="flex flex-col  bg-black text-white mx-6 p-12 rounded-md border-2 border-slate-30">
+          <div className="flex flex-col  bg-black text-white mx-6 p-12 rounded-md border-2 border-slate-300">
             <div className="flex flex-col ">
               <span className="text-3xl font-bold text-center border-4 rounded-xl">
                 3 LEVEL
@@ -138,14 +138,14 @@ const Courses = () => {
         </div>
       </div>
       <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
-        <div className="z-30 relative flex justify-center  w-fit items-center bg-purple-900 bg-opacity-80 ">
+        <div className="z-30 relative flex justify-center   w-fit items-center bg-purple-900 bg-opacity-80 ">
           <div className=" px-24 my-4 w-full md:px-4">
             <h1 className="text-white font-bold  my-4 text-center text-2xl pb-4 border-b-1 ">
               APPLY FOR A LESSON!
             </h1>
             <form ref={form} onSubmit={applyCustomer}>
-              <div className="flex flex-col justify-center mt-10 md:mt-2 md:mx-4">
-                <div className="flex w-full justify-center md:flex-col">
+              <div className="flex flex-col justify-center md:items-center mt-10 md:mt-2 md:mx-4">
+                <div className="flex w-full justify-center md:flex-col md:items-center">
                   <input
                     className="m-3 p-4 w-1/2 md:w-full bg-sowhite text-lg text-black border-1 rounded-full focus:outline-none"
                     type="text"

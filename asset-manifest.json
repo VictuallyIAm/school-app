@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/school-app/static/css/main.0ce30b12.css",
-    "main.js": "/school-app/static/js/main.d0a61153.js",
+    "main.css": "/school-app/static/css/main.025302e5.css",
+    "main.js": "/school-app/static/js/main.70f2c72e.js",
     "static/js/787.77fdc768.chunk.js": "/school-app/static/js/787.77fdc768.chunk.js",
     "static/media/card3.png": "/school-app/static/media/card3.43a55c52b446da9e1ccd.png",
     "static/media/card2.png": "/school-app/static/media/card2.1b37446503aebe4d856d.png",
     "static/media/card1.png": "/school-app/static/media/card1.8f45f568820dc8dd7563.png",
     "static/media/bob.jpg": "/school-app/static/media/bob.10b8fa1f2be4a22281a1.jpg",
     "index.html": "/school-app/index.html",
-    "main.0ce30b12.css.map": "/school-app/static/css/main.0ce30b12.css.map",
-    "main.d0a61153.js.map": "/school-app/static/js/main.d0a61153.js.map",
+    "main.025302e5.css.map": "/school-app/static/css/main.025302e5.css.map",
+    "main.70f2c72e.js.map": "/school-app/static/js/main.70f2c72e.js.map",
     "787.77fdc768.chunk.js.map": "/school-app/static/js/787.77fdc768.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ce30b12.css",
-    "static/js/main.d0a61153.js"
+    "static/css/main.025302e5.css",
+    "static/js/main.70f2c72e.js"
   ]
 }

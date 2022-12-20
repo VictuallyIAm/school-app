@@ -17,7 +17,7 @@ const TeacherCard = (teacher) => {
           laudantium commodi aspernatur consectetur reiciendis deleniti nisi
           suscipit atque? Atque, aliquid?
         </div>
-        <Link to="/courses">
+        <Link to="courses">
           <button className="px-5 py-2 border-2 bg-orange-500 rounded-xl">
             Want to study with
           </button>

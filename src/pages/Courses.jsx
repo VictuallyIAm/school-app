@@ -32,6 +32,12 @@ const Courses = () => {
   return (
     <>
       <div className=" bg-black bg-opacity-80">
+        <h1 className="text-white justify-center text-center font-bold text-5xl p-4 pt-8 pb-1 flex">
+          GROUP LESSONS
+        </h1>
+        <h2 className="text-white justify-center text-center text-3xl p-4 py-8 flex">
+          ALL LESSONS ARE CONDUCTED REMOTELY AT A CONVENIENT TIME FOR YOU
+        </h2>
         <div className="flex justify-around flex-wrap py-8">
           <div className="flex flex-col  bg-white text-black mx-6 p-12 rounded-md border-2 border-slate-30">
             <div className="flex flex-col ">
@@ -132,29 +138,32 @@ const Courses = () => {
         </div>
       </div>
       <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
-        <div className="z-30 relative flex justify-center  w-96 items-center bg-backmodal bg-opacity-80 ">
-          <div className=" mx-24 my-4  ">
-            <h1 className="text-white my-4 text-center text-2xl">
-              Request a call
+        <div className="z-30 relative flex justify-center  w-fit items-center bg-purple-900 bg-opacity-80 ">
+          <div className=" px-24 my-4 w-full md:px-4">
+            <h1 className="text-white font-bold  my-4 text-center text-2xl pb-4 border-b-1 ">
+              APPLY FOR A LESSON!
             </h1>
             <form ref={form} onSubmit={applyCustomer}>
-              <div className="flex flex-col justify-center">
-                <input
-                  className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
-                  type="text"
-                  name="user_name"
-                  placeholder="Name"
-                  required
-                />
-                <input
-                  className="my-3 p-1 bg-transparent text-lg text-white border-b-2 focus:outline-none"
-                  type="text"
-                  name="phoneNumber"
-                  placeholder="Phone Number"
-                  required
-                />
+              <div className="flex flex-col justify-center mt-10 md:mt-2 md:mx-4">
+                <div className="flex w-full justify-center md:flex-col">
+                  <input
+                    className="m-3 p-4 w-1/2 md:w-full bg-sowhite text-lg text-black border-1 rounded-full focus:outline-none"
+                    type="text"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                  />
+
+                  <input
+                    className="m-3 p-4 w-1/2 md:w-full bg-sowhite text-lg text-black border-1 rounded-full focus:outline-none"
+                    type="phone"
+                    name="phone_number"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
                 <button
-                  className="m-4 px-5 py-2 text-white text-lg font-light bg-sky-600 rounded-xl"
+                  className="m-4 px-5 py-2 md:w-full text-purple-500 text-lg font-light bg-white rounded-xl"
                   type="submit"
                 >
                   Apply

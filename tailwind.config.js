@@ -11,15 +11,23 @@ module.exports = {
     },
     extend: {
       colors: {
+        sogray: '#3d3d3d',
+        sowhite: '#f5f5f5',
+        verywhite: '#f6f6f6',
+        soslate: '#e8e8e8',
         'regal-blue': '#101755',
         'my-black': '#222222',
+        biruz: '#89babf',
         backmodal: '#000e17',
       },
       backgroundImage: {
         hero: "url('./data/students.jpg')",
         villain: "url('./data/foot.webp')",
       },
+      borderWidth: {
+        1: '1px',
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 }

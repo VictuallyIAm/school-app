@@ -7,7 +7,7 @@ const NotFound = () => {
       <p className="text-white text-center text-6xl">
         It seems we don't have this here.
       </p>
-      <Link to="/">
+      <Link to="/school-app">
         <button className="text-center text-lg bg-sky-500 border-2 rounded my-12 px-12 py-4">
           Go back
         </button>
